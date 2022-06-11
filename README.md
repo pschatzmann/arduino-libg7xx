@@ -6,6 +6,27 @@ SPARCstations and passed 82 out of 84 test vectors published by CCITT
 which the G.721 decoder implementation for u-law samples did not pass,
 may be in error because they are identical to two other vectors for G.723_40.]
 
+
+## Installation in Arduino
+
+You can download the library as zip and call include Library -> zip library. Or you can git clone this project into the Arduino libraries folder e.g. with
+
+```
+cd  ~/Documents/Arduino/libraries
+git clone pschatzmann/arduino-audio-tools.git
+```
+
+I recommend to use git because you can easily update to the latest version just by executing the ```git pull``` command in the project folder.
+
+
+## Documentation
+
+I recommend to use this library together with my [Arduino Audio Tools](https://github.com/pschatzmann/arduino-audio-tools). 
+This is just one of many __codecs__ that I have collected so far: Further details can be found in the [Encoding and Decoding Wiki](https://github.com/pschatzmann/arduino-audio-tools/wiki/Encoding-and-Decoding-of-Audio) of the Audio Tools.
+
+
+## Copyright
+
 This source code is released by Sun Microsystems, Inc. to the public domain.
 Please give your acknowledgement in product literature if this code is used
 in your product implementation.
@@ -15,7 +36,9 @@ software.  However, Sun's implementations have been optimized for higher
 performance on SPARCstations.
 
 
-The source files for CCITT conversion routines in this directory are:
+## Basic API
+
+You can also use this library w/o the AudioTools. The source files for CCITT conversion routines in this directory are:
 
 	g72x.h		header file for g721.c, g723_24.c and g723_40.c
 	g711.c		CCITT G.711 u-law and A-law compression
@@ -58,6 +81,7 @@ where
 		 AUDIO_ENCODING_LINEAR	for 16-bit linear PCM samples
 
 
+## Other Systems
 
 This directory also includes the following sample programs:
 
