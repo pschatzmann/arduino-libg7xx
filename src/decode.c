@@ -8,6 +8,7 @@
 #ifndef ARDUINO
 #include "g72x.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 
 /*
@@ -35,7 +36,7 @@ int unpack_input(unsigned char* code, int bits)
 }
 
 
-main(int argc, char** argv)
+int main(int argc, char** argv)
 {
     short sample;
     unsigned char code;

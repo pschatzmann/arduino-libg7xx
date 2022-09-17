@@ -8,6 +8,7 @@
 #ifndef ARDUINO
 #include "g72x.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 
 /*
@@ -32,7 +33,7 @@ int pack_output(unsigned code, int bits)
 }
 
 
-main(int argc, char** argv)
+int main(int argc, char** argv)
 {
     struct g72x_state state;
     unsigned char sample_char;
