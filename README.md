@@ -1,3 +1,8 @@
+# arduino-libg7xx
+
+[![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue.svg)](https://www.arduino.cc/reference/en/libraries/)
+[![IDF Component](https://img.shields.io/badge/IDF-Component-blue.svg)](https://github.com/pschatzmann/arduino-libg7xx)
+
 The files in this directory comprise ANSI-C language reference implementations
 of the CCITT (International Telegraph and Telephone Consultative Committee)
 G.711, G.721 and G.723 voice compressions.  They have been tested on Sun
